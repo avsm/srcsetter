@@ -12,7 +12,6 @@ depends: [
   "dune" {>= "3.17"}
   "jsont"
   "bytesrw"
-  "pro"
   "odoc" {with-doc}
 ]
 build: [

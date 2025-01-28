@@ -12,7 +12,7 @@
  (name srcsetter)
  (description "Srcsetter is a library that allows for handling a directory of responsive images suitable for embedding as `<img srcset` tags in a website. It uses the ImageMagick CLI tool to handle the actual processing of images, and the `srcsetter-cmd` package to generate the input to this library.")
  (synopsis "Image srcset library for webp images")
- (depends jsont bytesrw pro))
+ (depends jsont bytesrw))
 
 (package
  (name srcsetter-cmd)
