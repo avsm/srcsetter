@@ -77,8 +77,8 @@ let _ =
     if String.starts_with ~prefix:"/" p then Eio.(Path.(Stdenv.fs env / p))
     else Eio.(Path.(Stdenv.cwd env / p))
   in
-  let src_dir = path_env "bushel/images" in
-  let dst_dir = path_env "site/images" in
+  let src_dir = path_env Sys.argv.(1) in
+  let dst_dir = path_env Sys.argv.(2) in
   let proc_mgr = Eio.Stdenv.process_mgr env in
   let idx_file = "index.json" in
   let img_widths =
