@@ -1,0 +1,5 @@
+(executable
+ (package srcsetter)
+ (public_name srcsetter)
+ (name srcsetter)
+ (libraries srcsetter-cmd progress cmdliner eio_main))

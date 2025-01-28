@@ -1,0 +1,11 @@
+(library
+ (name srcsetter_cmd)
+ (public_name srcsetter-cmd)
+ (modules srcsetter_cmd)
+ (libraries srcsetter eio fpath progress))
+
+(library
+ (name srcsetter)
+ (modules srcsetter)
+ (public_name srcsetter)
+ (libraries jsont jsont.bytesrw))
